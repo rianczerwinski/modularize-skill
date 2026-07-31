@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "subject": "Product feedback loop",
+  "mode": "medium",
+  "requested_shape": "decomposition",
+  "diagnosed_shape": "decomposition",
+  "status": "verified",
+  "organizing_principle": "successive transformations of feedback",
+  "tree": {
+    "id": "1",
+    "label": "Product feedback loop",
+    "kind": "root",
+    "gloss": "The system that turns observed experience into product change.",
+    "cohesion_basis": "One end-to-end learning loop.",
+    "children": [
+      {
+        "id": "1.1",
+        "label": "Capture",
+        "kind": "transformation stage",
+        "gloss": "Collects reports, observations, and behavioral signals.",
+        "cohesion_basis": "Acquisition of evidence before interpretation.",
+        "children": [],
+        "facets": []
+      },
+      {
+        "id": "1.2",
+        "label": "Interpretation",
+        "kind": "transformation stage",
+        "gloss": "Groups evidence, tests explanations, and establishes priority.",
+        "cohesion_basis": "Conversion of raw evidence into warranted product claims.",
+        "children": [],
+        "facets": []
+      },
+      {
+        "id": "1.3",
+        "label": "Intervention",
+        "kind": "transformation stage",
+        "gloss": "Changes the product and observes the resulting behavior.",
+        "cohesion_basis": "Translation of warranted claims into tested change.",
+        "children": [],
+        "facets": []
+      }
+    ],
+    "facets": []
+  },
+  "verification": {
+    "population_sanity": {
+      "status": "passed",
+      "note": "The subject has differentiated stages rather than peer members."
+    },
+    "paradigm_sweep": {
+      "status": "not_run",
+      "note": "Medium mode compared the two live candidates without a full sweep."
+    },
+    "native_n_array": {
+      "status": "not_run",
+      "note": "The candidate dispute concerned principle, not nearby child counts."
+    },
+    "one_ply_lookahead": {
+      "status": "passed",
+      "note": "Likely child capabilities remain within their parent stages."
+    },
+    "kind_homogeneity": {
+      "status": "passed",
+      "note": "All root children are transformation stages."
+    }
+  },
+  "residuals": {
+    "excluded_decorations": [
+      {
+        "item": "Quarterly roadmap status",
+        "distributed_as": "state attached to Intervention work"
+      }
+    ],
+    "seam_straddlers": [
+      {
+        "item": "Experiment telemetry",
+        "home": "Intervention",
+        "alternate": "Capture",
+        "reason": "It is captured evidence, but its defining role is measuring an intervention."
+      }
+    ],
+    "judgment_calls": [
+      {
+        "decision": "Use transformation stage rather than team ownership.",
+        "alternative": "Research / Product / Engineering",
+        "reason": "Ownership changes more readily than the feedback transformations."
+      }
+    ],
+    "low_confidence": [],
+    "semi_lattice_signals": [],
+    "population_warnings": []
+  }
+}
