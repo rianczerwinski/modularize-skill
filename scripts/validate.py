@@ -584,6 +584,8 @@ def _validate_node(
 
     if children and member_ids:
         errors.append(f"{path}.member_ids: internal nodes cannot directly home items")
+    if not children and not member_ids:
+        errors.append(f"{path}.member_ids: leaf nodes must home at least one constituent")
     if diagnosed_shape == "decomposition" and facets:
         errors.append(f"{path}.facets: decomposition nodes must not carry population facets")
 

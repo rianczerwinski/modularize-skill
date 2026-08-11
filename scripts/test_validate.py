@@ -193,6 +193,21 @@ class ValidatorContractTests(unittest.TestCase):
             any(item_id in error and "found 2 homes" in error for error in errors)
         )
 
+    def test_negative_control_rejects_empty_leaf(self) -> None:
+        document = _valid_document()
+        leaf = document["tree"]["children"][0]
+        for item_id in leaf["member_ids"]:
+            document["residuals"]["unresolved_items"].append(
+                {
+                    "item_id": item_id,
+                    "reason": "Keep inventory accounting valid while testing the empty leaf.",
+                    "next_evidence": "The leaf itself must still be rejected.",
+                }
+            )
+        leaf["member_ids"] = []
+        errors = _errors(document)
+        self.assertTrue(any("leaf nodes must home at least one constituent" in error for error in errors))
+
     def test_negative_control_rejects_decoration_as_node_member(self) -> None:
         document = _valid_document()
         decoration_id = document["residuals"]["excluded_decorations"][0]["item_id"]

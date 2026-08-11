@@ -65,7 +65,7 @@ Every node has:
 }
 ```
 
-Internal nodes have children and no direct members. Leaves home inventory constituents. A population remains a single root leaf with non-empty facets and its peer members in `member_ids`.
+Internal nodes have children and no direct members. Every leaf homes at least one inventory constituent; an empty leaf is an asserted category without any accounted source and is invalid. A population remains a single root leaf with non-empty facets and its peer members in `member_ids`.
 
 One-child layers are invalid. Two-child layers add `dichotomy_reason`. Three to seven children need no numerical justification. A node with more than seven children adds:
 
