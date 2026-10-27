@@ -1,6 +1,7 @@
 ---
 name: modularize
 description: Decompose or reconcile a bounded body of material into a coherent, auditable module structure with light, medium, or heavy semantic carving. Use when the user asks to modularize, decompose, carve, factor, remodularize, resynthesize, reconcile, structure, or find the natural joints in a workframe, system, ontology, roadmap, document, inventory, or conceptual field; when a hierarchy has junk-drawer or cross-cutting buckets; or when another skill needs a reusable decomposition service. Distinguishes decompositions from populations, accounts for every source constituent, preserves overlap as explicit relations and residuals, and emits canonical versioned JSON with optional derived views.
+license: MIT
 ---
 
 # modularize
